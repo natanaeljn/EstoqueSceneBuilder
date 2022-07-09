@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="595.0" prefWidth="750.0" style="-fx-background-color: #8B0000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.GeralController">
+	<children>
+		<AnchorPane layoutX="35.0" layoutY="34.0" prefHeight="528.0" prefWidth="678.0" style="-fx-background-color: #B5B5B5;">
+			<children>
+				<ImageView fitHeight="55.0" fitWidth="306.0" layoutX="360.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../Pictures/logo.png" />
+					</image>
+				</ImageView>
+				<VBox layoutY="28.0" prefHeight="176.0" prefWidth="293.0" />
+				<MenuBar opacity="0.68" prefHeight="28.0" prefWidth="293.0" style="-fx-background-color: #F0FFFF;">
+					<menus>
+						<Menu mnemonicParsing="false" text="Estoque">
+							<items>
+								<MenuItem fx:id="verificar" mnemonicParsing="false" onAction="#onBtNew" text="Verificar" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Vendedores">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Verificar" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Chefes de Setores">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Verificar" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+				<SplitPane layoutX="292.0" opacity="0.68" prefHeight="528.0" prefWidth="59.0" style="-fx-background-color: #F0FFFF;" />
+				<Pane layoutY="493.0" opacity="0.68" prefHeight="35.0" prefWidth="293.0" style="-fx-background-color: #F0FFFF;" />
+				<Pane layoutY="28.0" opacity="0.68" prefHeight="465.0" prefWidth="41.0" style="-fx-background-color: #F0FFFF;" />
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>
